@@ -248,6 +248,7 @@ func (ui *UI) confirmDeletion(shouldEmpty bool) {
 				"\"?",
 		).
 		AddButtons([]string{"yes", "no", "don't ask me again"}).
+		SetFocus(1).
 		SetDoneFunc(func(buttonIndex int, buttonLabel string) {
 			switch buttonIndex {
 			case 2:
